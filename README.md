@@ -1,7 +1,7 @@
-# Quality-Assurance-Portfolio
+# QA-Portfolio
 A curated portfolio showcasing my QA skills, including manual testing, test case design, bug reporting, and automation projects. Projects demonstrate my ability to ensure software quality, identify issues, and improve workflows.
 
-# Quality Assurance Portfolio
+# QA Portfolio
 
 👋🏽 Welcome! This portfolio showcases my Quality Assurance (QA) skills, including manual testing, test case design, bug reporting, and automation.
 
