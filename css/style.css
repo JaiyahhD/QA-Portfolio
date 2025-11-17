@@ -1,0 +1,25 @@
+:root {
+    --hot-pink: #FF4DA6;        /* Bratz energy */
+    --deep-purple: #3A0057;     /* Luxury + mystery */
+    --ice-teal: #4EF0E1;        /* Tech + healthcare */
+    --charcoal-black: #111111;  /* Base background */
+    --soft-white: #F7F7F7;      /* Clean accents */
+    --neon-shadow: 0 0 10px var(--ice-teal), 0 0 20px var(--hot-pink);
+}
+.typewriter {
+    color: var(--ice-teal);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: var(--neon-shadow);
+    overflow: hidden;
+    border-right: .15em solid var(--hot-pink);
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+/* Blinking cursor */
+@keyframes blink-caret {
+    50% { border-color: transparent; }
+}
