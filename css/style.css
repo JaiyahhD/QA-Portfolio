@@ -319,3 +319,75 @@ h2 {
 .social-links a:hover {
     color: var(--hot-pink);
 }
+/* Sets images and embedded objects to never overflow their containers */
+img, iframe, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Forces elements that use box-sizing to include padding/border in the width calculation */
+* {
+    box-sizing: border-box; 
+}
+@media (max-width: 768px) {
+    /* Collapse the navigation menu into a column */
+    .main-nav {
+        flex-direction: column;
+        align-items: flex-start; /* Align brand to the left */
+        padding: 1rem 5%;
+    }
+
+    /* Stack the list items and make links full width */
+    .main-nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .main-nav ul li {
+        width: 100%;
+    }
+
+    .main-nav ul li a {
+        display: block; /* Make the clickable area wider */
+        margin-left: 0;
+        padding: 0.75rem 0;
+        text-align: center;
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    }
+}
+@media (max-width: 900px) {
+    /* Reduce padding on the main sections for more screen space */
+    .page-section {
+        padding: 3rem 5%;
+    }
+    
+    /* Ensure only one column on smaller tablets/phones for Focus Areas */
+    .focus-grid {
+        /* Force two columns to stack vertically on mobile */
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Ensure skill cards and project cards take up the full width */
+    .skills-container {
+        flex-direction: column; /* Stack the two skill cards on top of each other */
+        gap: 1.5rem;
+    }
+}
+@media (max-width: 600px) {
+    .main-footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-social-links {
+        padding-top: 0.5rem;
+    }
+    
+    /* Reduce margin on social links so they don't look crowded */
+    .footer-social-links a {
+        margin: 0 0.5rem;
+    }
+}
