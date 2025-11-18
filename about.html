@@ -1,40 +1,67 @@
-<header>
-    <nav class="main-nav">
-        <a href="index.html" class="nav-brand">J. Symone</a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<section id="about" class="page-section">
-    <h2><i class="fas fa-heartbeat"></i> About Me: Jaiyah Davis</h2>
-    <p class="bio">Hi, I’m Jaiyah — a **Healthcare QA enthusiast** dedicated to breaking workflows to improve patient safety. My background in healthcare combines with a detail-driven mindset, making me proficient in both manual QA methodologies and modern automation tools. As a mom of 4, I bring exceptional **multitasking** and **prioritization** skills to every project. Let’s make tech safer and more reliable.</p>
-
-    <div class="skills-container">
-        <div class="skills-card">
-            <h3><i class="fas fa-laptop-code"></i> Technical Toolkit</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaiyah Symone | About</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-brand">J. Symone</a>
             <ul>
-                <li>Manual QA (Functional, Regression, UAT)</li>
-                <li>API Testing (Postman)</li>
-                <li>Automation Testing (Cypress)</li>
-                <li>Performance Testing (Basic)</li>
-                <li>**SQL** (Basic Queries for Data Validation)</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html" class="active">About</a></li> 
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-        </div>
+        </nav>
+    </header>
 
-        <div class="skills-card">
-            <h3><i class="fas fa-bug"></i> Process & Domain</h3>
-            <ul>
-                <li>**Healthcare Domain Knowledge** (EHR, Patient Portals)</li>
-                <li>Test Case Management (TestRail)</li>
-                <li>Defect Tracking (Jira)</li>
-                <li>CI/CD Basics (GitHub Actions/Pipelines)</li>
-                <li>Web Fundamentals (HTML, CSS, JS basics)</li>
-            </ul>
+    <section id="about" class="page-section">
+        <h2><i class="fas fa-heartbeat"></i> About Me: Jaiyah Davis</h2>
+        <p class="bio">Hi, I’m Jaiyah — a **Healthcare QA enthusiast** dedicated to breaking workflows to improve patient safety. My background in healthcare combines with a detail-driven mindset, making me proficient in both manual QA methodologies and modern automation tools. As a mom of 4, I bring exceptional **multitasking** and **prioritization** skills to every project. Let’s make tech safer and more reliable.</p>
+
+        <div class="skills-container">
+            <div class="skills-card">
+                <h3><i class="fas fa-laptop-code"></i> Technical Toolkit</h3>
+                <ul>
+                    <li>Manual QA (Functional, Regression, UAT)</li>
+                    <li>API Testing (Postman)</li>
+                    <li>Automation Testing (Cypress)</li>
+                    <li>Performance Testing (Basic)</li>
+                    <li>**SQL** (Basic Queries for Data Validation)</li>
+                </ul>
+            </div>
+
+            <div class="skills-card">
+                <h3><i class="fas fa-bug"></i> Process & Domain</h3>
+                <ul>
+                    <li>**Healthcare Domain Knowledge** (EHR, Patient Portals)</li>
+                    <li>Test Case Management (TestRail)</li>
+                    <li>Defect Tracking (Jira)</li>
+                    <li>CI/CD Basics (GitHub Actions/Pipelines)</li>
+                    <li>Web Fundamentals (HTML, CSS, JS basics)</li>
+                </ul>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; <span id="current-year"></span> Jaiyah Davis QA Portfolio. All rights reserved.</p>
+        <div class="footer-social-links">
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#top" title="Back to Top"><i class="fas fa-arrow-up"></i></a> 
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to automatically set the current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
