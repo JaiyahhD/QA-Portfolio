@@ -1,4 +1,4 @@
-const text = "QA Engineer in Progress | Mom of 4 | Healthcare Techie";
+const text = "QA Automation Specialist | Cypress Enthusiast | Mother of 4";
 const heroText = document.getElementById('hero-text');
 let index = 0;
 
