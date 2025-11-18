@@ -35,5 +35,5 @@ Each repository contains detailed READMEs outlining the testing approach, scope,
 ## 📫 Connect with Me
 
 * **Portfolio:** https://jaiyahhd.github.io/QA-Portfolio/
-* **LinkedIn:** linkedin.com/in/jai-d-882358132
+* **LinkedIn:** https://linkedin.com/in/jai-d-882358132
 * **Email:** jai.kdavis04@gmail.com
