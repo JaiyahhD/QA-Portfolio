@@ -133,3 +133,86 @@ h2 {
     width: 1em;
     margin-left: -1em;
 }
+/* --- Button and Project Link Styling --- */
+
+/* Style for the general button look */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--hot-pink);
+    color: var(--charcoal-black);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style for the links inside the project cards */
+.project-card a {
+    /* Inherit button styles for a consistent look */
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--hot-pink);
+    color: var(--charcoal-black);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.project-card a:hover,
+.btn:hover {
+    background-color: var(--ice-teal); /* Bright color on hover */
+    color: var(--deep-purple);
+    box-shadow: var(--neon-shadow); /* Neon glow effect */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+/* --- Project Grid Layout --- */
+
+.project-grid {
+    display: grid;
+    /* This creates a responsive grid: 
+       - It keeps cards at a minimum width of 300px.
+       - It automatically fits as many columns as possible. */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem; /* Space between the cards */
+    padding: 2rem 10%; /* Padding around the grid */
+}
+
+.project-card {
+    /* Apply deep purple background and neon style */
+    background-color: var(--deep-purple);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(78, 240, 225, 0.1); /* Subtle ice-teal border */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Initial subtle shadow */
+    transition: all 0.4s ease;
+    display: flex; /* Helps align content within the card */
+    flex-direction: column;
+}
+
+/* --- Card Hover Effect --- */
+.project-card:hover {
+    box-shadow: var(--neon-shadow); /* Strong neon glow on hover */
+    transform: scale(1.03); /* Subtle zoom */
+    border-color: var(--ice-teal);
+}
+
+/* --- Project Card Typography --- */
+.project-card h3 {
+    color: var(--ice-teal);
+    font-size: 1.5rem;
+    margin-top: 0;
+    border-bottom: 2px solid var(--hot-pink);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-card p {
+    color: var(--soft-white);
+    flex-grow: 1; /* Pushes the button to the bottom */
+}
